@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_24"/>
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:gravity="end"
+            android:textColor="#f0f0f0"
+            android:textSize="35dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1000dp"
+        android:layout_height="174dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:background="@null"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Create Your Account"
+        android:textColor="#ffff"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/InputFristname"
+        android:layout_width="510dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="626dp"
+        android:autofillHints="@string/app_name"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#040404"
+        android:textColorHint="@color/blackcolor" />
+
+    <EditText
+        android:id="@+id/Inputusename"
+        android:layout_width="510dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="535dp"
+        android:autofillHints="@string/app_name"
+        android:ems="10"
+        android:hint="Use Name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#040404"
+        android:textColorHint="@color/blackcolor"/>
+
+    <EditText
+        android:id="@+id/InputEmail"
+        android:layout_width="510dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="443dp"
+        android:autofillHints="Email"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="#040404"
+        android:textColorHint="@color/blackcolor"/>
+
+    <EditText
+        android:id="@+id/InputPassword"
+        android:layout_width="510dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="346dp"
+        android:autofillHints="Email"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="#040404"
+        android:textColorHint="@color/blackcolor" />
+
+    <EditText
+        android:id="@+id/InputCfPassword"
+        android:layout_width="510dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="253dp"
+        android:autofillHints="Email"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="#040404"
+        android:textColorHint="@color/blackcolor" />
+
+    <Button
+        android:id="@+id/dnhap"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/dkbtn"
+        android:elevation="15dp"
+        android:onClick="gotoback"
+        android:text="Đăng Ký"
+        android:textAllCaps="false"
+        android:textColor="@color/blackcolor"
+        android:textSize="20dp"
+        tools:ignore="OnClick" />
+</RelativeLayout>
